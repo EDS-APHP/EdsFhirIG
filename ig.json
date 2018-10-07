@@ -15,6 +15,7 @@
         "http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type", 
         "https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1",
         "https://fhir-eds.aphp.fr/StructureDefinition/PatientEDS",
+        "https://fhir-eds.aphp.fr/StructureDefinition/EncounterStayEDS",
 	"http://hl7.org/fhir/StructureDefinition/geolocation"
 	],
   "extraTemplates": [ "mappings" ],
@@ -85,6 +86,10 @@
 	"StructureDefinition/PatientEDS": {
 	  "base": "StructureDefinition-PatientEDS.html",
 	  "defns": "StructureDefinition-PatientEDS-definitions.html"
+	},
+	"StructureDefinition/EncounterStayEDS": {
+	  "base": "StructureDefinition-EncounterStayEDS.html",
+	  "defns": "StructureDefinition-EncounterStayEDS-definitions.html"
 	},
 	"StructureDefinition/geolocation": {
 	  "base": "StructureDefinition-geolocation.html",
