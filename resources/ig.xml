@@ -44,6 +44,12 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="StructureDefinition/PatientEDS"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/au-pd-practitionerrole"/>
 			</sourceReference>
 		</resource>

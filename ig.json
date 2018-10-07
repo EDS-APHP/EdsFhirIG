@@ -76,6 +76,10 @@
 	  "base": "StructureDefinition-au-pd-practitioner.html",
 	  "defns": "StructureDefinition-au-pd-practitioner-definitions.html"
 	},
+	"StructureDefinition/PatientEDS": {
+	  "base": "StructureDefinition-PatientEDS.html",
+	  "defns": "StructureDefinition-PatientEDS-definitions.html"
+	},
 	"StructureDefinition/au-pd-practitionerrole": {
 	  "base": "StructureDefinition-au-pd-practitionerrole.html",
 	  "defns": "StructureDefinition-au-pd-practitionerrole-definitions.html"

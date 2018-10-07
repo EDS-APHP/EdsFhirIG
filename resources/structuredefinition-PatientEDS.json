@@ -1,0 +1,50 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PatientEDS",
+  "meta": {
+    "lastUpdated": "2018-10-06T21:53:05.408+00:00"
+  },
+  "url": "http://hl7.org.au/fhir/pd/StructureDefinition/PatientEDS",
+  "name": "PatientEDS",
+  "status": "draft",
+  "date": "2018-10-06T21:53:05.3971148+00:00",
+  "fhirVersion": "3.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.address.extension",
+        "path": "Patient.address.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Patient.address.extension:geolocation",
+        "path": "Patient.address.extension",
+        "sliceName": "geolocation",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/StructureDefinition/geolocation"
+          }
+        ]
+      },
+      {
+        "id": "Patient.photo",
+        "path": "Patient.photo",
+        "max": "0"
+      }
+    ]
+  }
+}
