@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="geolocation" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2018-10-06T21:54:40.665+00:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/StructureDefinition/geolocation" />
+  <name value="geolocation" />
+  <status value="active" />
+  <date value="2018-10-06T21:54:40.6598101Z" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="datatype" />
+  <context value="Address" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:latitude">
+      <path value="Extension.extension" />
+      <sliceName value="latitude" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:latitude.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="latitude" />
+    </element>
+    <element id="Extension.extension:latitude.value[x]:valueDecimal">
+      <path value="Extension.extension.valueDecimal" />
+      <sliceName value="valueDecimal" />
+      <type>
+        <code value="decimal" />
+      </type>
+    </element>
+    <element id="Extension.extension:longitude">
+      <path value="Extension.extension" />
+      <sliceName value="longitude" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:longitude.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="longitude" />
+    </element>
+    <element id="Extension.extension:longitude.value[x]:valueDecimal">
+      <path value="Extension.extension.valueDecimal" />
+      <sliceName value="valueDecimal" />
+      <type>
+        <code value="decimal" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/geolocation" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <label value="latitude" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

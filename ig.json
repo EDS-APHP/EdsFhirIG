@@ -10,7 +10,13 @@
     }
   ],  
   "spreadsheets": [],
-  "special-urls": [ "http://hl7.org.au/fhir/CodeSystem/smd-interfaces",  "http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type", "https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1" ],
+  "special-urls": [ 
+        "http://hl7.org.au/fhir/CodeSystem/smd-interfaces",  
+        "http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type", 
+        "https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1",
+        "https://fhir-eds.aphp.fr/StructureDefinition/PatientEDS",
+	"http://hl7.org/fhir/StructureDefinition/geolocation"
+	],
   "extraTemplates": [ "mappings" ],
   "defaults": {
     "ConceptMap": { "template-base": "cm.html" },
@@ -79,6 +85,10 @@
 	"StructureDefinition/PatientEDS": {
 	  "base": "StructureDefinition-PatientEDS.html",
 	  "defns": "StructureDefinition-PatientEDS-definitions.html"
+	},
+	"StructureDefinition/geolocation": {
+	  "base": "StructureDefinition-geolocation.html",
+	  "defns": "StructureDefinition-geolocation-definitions.html"
 	},
 	"StructureDefinition/au-pd-practitionerrole": {
 	  "base": "StructureDefinition-au-pd-practitionerrole.html",
